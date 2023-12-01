@@ -1,0 +1,31 @@
+@use './theming' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 1.3rem;
+        background-color: $background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $primary;
+        border-radius: 5rem;
+    }
+
+    body {
+        height: 100%;
+        font-family: Roboto, 'Helvetica Neue', sans-serif;
+    }
+}
